@@ -63,7 +63,7 @@ public class StudentBoard extends AppCompatActivity {
         btnResult.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i=new Intent(StudentBoard.this,StudentA.class);
+                Intent i=new Intent(StudentBoard.this,StudentResults.class);
                 startActivity(i);
                 finish();
             }

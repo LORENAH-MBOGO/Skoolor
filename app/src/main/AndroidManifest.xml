@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Skoolor">
-        <activity android:name=".StudentAssignments"></activity>
+        <activity android:name=".StudentResults"></activity>
+        <activity android:name=".StudentAssignments" />
         <activity android:name=".StudentAnnouncements" />
         <activity android:name=".StudentBoard" />
         <activity android:name=".Splash" />
