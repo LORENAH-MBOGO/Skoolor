@@ -100,7 +100,7 @@ public class StudentLogin extends AppCompatActivity {
                     editor1.putString("name",rn);
                     editor1.commit();
 
-                    Intent i= new Intent(StudentLogin.this,StudentActivity2.class);
+                    Intent i= new Intent(StudentLogin.this,StudentBoard.class);
                     startActivity(i);
                     finish();
                 }
@@ -155,7 +155,7 @@ public class StudentLogin extends AppCompatActivity {
                             SharedPreferences.Editor editor = sp.edit();
                             editor.putString("name", username);
                             editor.commit();
-                            Intent i = new Intent(StudentLogin.this, StudentActivity2.class);
+                            Intent i = new Intent(StudentLogin.this, StudentBoard.class);
                             startActivity(i);
                             finish();
                             break;
