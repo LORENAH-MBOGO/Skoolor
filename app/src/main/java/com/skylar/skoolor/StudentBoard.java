@@ -42,7 +42,7 @@ public class StudentBoard extends AppCompatActivity {
         btnAssignment.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i= new Intent(StudentBoard.this,StudentAssignment.class);
+                Intent i= new Intent(StudentBoard.this,StudentAssignments.class);
                 startActivity(i);
                 finish();
 
