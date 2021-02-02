@@ -44,7 +44,7 @@ public class StudentAssignments extends AppCompatActivity {
         btnBack.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i =new Intent(StudentActivity4.this,StudentBoard.class);
+                Intent i =new Intent(StudentAssignments.this,StudentBoard.class);
                 startActivity(i);
                 finish();
             }
