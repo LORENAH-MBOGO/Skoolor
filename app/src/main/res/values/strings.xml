@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Skoolor</string>
+    <string name="new_user">New user ?</string>
 </resources>
