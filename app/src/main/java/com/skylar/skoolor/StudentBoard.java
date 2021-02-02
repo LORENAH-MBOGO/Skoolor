@@ -32,7 +32,7 @@ public class StudentBoard extends AppCompatActivity {
         btnAnnouncement.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i= new Intent(StudentBoard.this,StudentActivity3.class);
+                Intent i= new Intent(StudentBoard.this,StudentAnnouncements.class);
                 startActivity(i);
                 finish();
 
@@ -42,7 +42,7 @@ public class StudentBoard extends AppCompatActivity {
         btnAssignment.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i= new Intent(StudentBoard.this,StudentActivity4.class);
+                Intent i= new Intent(StudentBoard.this,StudentAssignment.class);
                 startActivity(i);
                 finish();
 
@@ -63,7 +63,7 @@ public class StudentBoard extends AppCompatActivity {
         btnResult.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i=new Intent(StudentBoard.this,StudentActivity5.class);
+                Intent i=new Intent(StudentBoard.this,StudentA.class);
                 startActivity(i);
                 finish();
             }
