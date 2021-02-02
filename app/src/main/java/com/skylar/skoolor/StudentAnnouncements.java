@@ -10,7 +10,6 @@ import android.widget.Button;
 import android.widget.TextView;
 
 public class StudentAnnouncements extends AppCompatActivity {
-    blic class StudentActivity3 extends AppCompatActivity {
         SharedPreferences sp1,sp2,sp3;
         Button btnBack;
         TextView tvCon,tvSub;
