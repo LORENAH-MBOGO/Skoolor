@@ -24,7 +24,7 @@ public class MainActivity extends AppCompatActivity {
         iStudent.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i= new Intent(MainActivity.this,StudentActivity1.class);
+                Intent i= new Intent(MainActivity.this,StudentLogin.class);
                 startActivity(i);
                 finish();
             }
@@ -32,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
         iTeacher.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i= new Intent(MainActivity.this,TeacherActivity1.class);
+                Intent i= new Intent(MainActivity.this,TeacherLogin.class);
                 startActivity(i);
                 finish();
             }
@@ -41,7 +41,7 @@ public class MainActivity extends AppCompatActivity {
         iParent.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i= new Intent(MainActivity.this,ParentActivity1.class);
+                Intent i= new Intent(MainActivity.this,ParentLogin.class);
                 startActivity(i);
                 finish();
 
@@ -51,5 +51,3 @@ public class MainActivity extends AppCompatActivity {
     }
 }
 
-    }
-}
