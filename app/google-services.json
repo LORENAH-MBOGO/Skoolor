@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "686285182420",
+    "firebase_url": "https://skoolor-b9223-default-rtdb.firebaseio.com",
+    "project_id": "skoolor-b9223",
+    "storage_bucket": "skoolor-b9223.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:686285182420:android:d19fc5405d12865cff3241",
+        "android_client_info": {
+          "package_name": "com.skylar.skoolor"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "686285182420-24lvthp9ed4pd564uk7qbc0it3hmdb1a.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDBl1vm2UxRorHSHEfxxR1FP3iACVLfUuw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "686285182420-24lvthp9ed4pd564uk7qbc0it3hmdb1a.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
