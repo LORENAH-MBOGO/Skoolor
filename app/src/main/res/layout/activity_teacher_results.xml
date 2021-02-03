@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@color/black">
 
     <TextView
         android:id="@+id/tvName"
@@ -17,8 +18,20 @@
         android:gravity="center_horizontal"
         android:text="RESULTS!" />
 
+    <TextView
+        android:id="@+id/tvSelect"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        android:textColor="@color/purple_200"
+        android:layout_marginBottom="10dp"
+        android:gravity="center_horizontal"
+        android:text="Select the Class" />
+
     <Spinner
         android:id="@+id/spSubject"
+        android:background="@color/white"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="15dp"
@@ -29,18 +42,21 @@
         android:layout_marginLeft="56dp"/>
 
     <EditText
+        android:id="@+id/etNote"
+        android:layout_width="match_parent"
+        android:layout_height="315dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="@color/white"
+        android:ems="10"
+        android:gravity="top|left"
         android:inputType="textMultiLine"
         android:lines="25"
-        android:minLines="15"
-        android:gravity="top|left"
         android:maxLines="50"
-        android:layout_height="wrap_content"
-        android:layout_width="match_parent"
+        android:minLines="15"
         android:scrollbars="vertical"
-        android:id="@+id/etNote"
-        android:layout_marginBottom="20dp"
-        android:ems="10"
-        android:text="" />
+        android:text=""
+        android:textColor="@color/white"
+        android:textSize="25sp" />
 
     <Button
         android:id="@+id/btnSubmit"
@@ -56,6 +72,7 @@
 
     <Button
         android:id="@+id/btnBack"
+        android:layout_marginTop="10dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/purple_200"

@@ -23,11 +23,11 @@
 
     <TextView
         android:id="@+id/tvCon"
-        android:layout_width="match_parent"
-        android:layout_height="530dp"
+        android:layout_width="392dp"
+        android:layout_height="467dp"
+        android:fontFamily="cursive"
         android:gravity="top|left"
         android:maxLines="50"
-        android:fontFamily="cursive"
         android:minLines="25"
         android:text=""
         android:textAlignment="center"
@@ -37,6 +37,7 @@
 
     <Button
         android:id="@+id/btnBack"
+        android:layout_marginTop="20dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/purple_200"

@@ -3,7 +3,7 @@
     xmlns:tool="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
-    android:background="@drawable/resu"
+    android:background="@color/black"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
@@ -26,6 +26,7 @@
         android:layout_width="392dp"
         android:layout_height="505dp"
         android:gravity="top|left"
+        android:background="@color/cardview_dark_background"
         android:maxLines="50"
         android:minLines="25"
         android:fontFamily="cursive"
