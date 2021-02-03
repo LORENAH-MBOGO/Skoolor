@@ -1,20 +1,21 @@
-package com.example.a91773.myapplication2;
+package com.skylar.skoolor;
 
 import android.content.Intent;
 import android.content.SharedPreferences;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import androidx.appcompat.app.AppCompatActivity;
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 
-public class ParentActivity4 extends AppCompatActivity {
+public class ParentResults extends AppCompatActivity {
 
     SharedPreferences sp6,sp5;
     TextView textView;
@@ -24,7 +25,7 @@ public class ParentActivity4 extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_parent4);
+        setContentView(R.layout.activity_parent_results);
         textView = findViewById(R.id.textView);
         sp5=getSharedPreferences("f1",MODE_PRIVATE);
         name=sp5.getString("name","");
@@ -35,7 +36,7 @@ public class ParentActivity4 extends AppCompatActivity {
         btnBack.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i=new Intent(ParentActivity4.this,ParentActivity2.class);
+                Intent i=new Intent(ParentResults.this, ParentBoard.class);
                 startActivity(i);
                 finish();
             }

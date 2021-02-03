@@ -1,16 +1,16 @@
-package com.example.a91773.myapplication2;
+package com.skylar.skoolor;
 
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.pm.ActivityInfo;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.EditText;
 import android.widget.TextView;
 
-public class ParentActivity2 extends AppCompatActivity {
+import androidx.appcompat.app.AppCompatActivity;
+
+public class ParentBoard extends AppCompatActivity {
 
     TextView tvName;
     Button btnResult,btnMeeting,btnLogout;
@@ -18,7 +18,7 @@ public class ParentActivity2 extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_parent2);
+        setContentView(R.layout.activity_parent_board);
 
         tvName=findViewById(R.id.tvName);
         btnLogout=findViewById(R.id.btnLogout);
@@ -33,7 +33,7 @@ public class ParentActivity2 extends AppCompatActivity {
         btnResult.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i=new Intent(ParentActivity2.this,ParentActivity4.class);
+                Intent i=new Intent(ParentBoard.this, ParentResults.class);
                 startActivity(i);
                 finish();
             }
@@ -42,7 +42,7 @@ public class ParentActivity2 extends AppCompatActivity {
         btnMeeting.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i=new Intent(ParentActivity2.this,ParentActivity3.class);
+                Intent i=new Intent(ParentBoard.this, ParentMeetings.class);
                 startActivity(i);
                 finish();
             }
@@ -51,7 +51,7 @@ public class ParentActivity2 extends AppCompatActivity {
         btnLogout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i=new Intent(ParentActivity2.this,MainActivity.class);
+                Intent i=new Intent(ParentBoard.this,MainActivity.class);
                 startActivity(i);
                 finish();
             }
