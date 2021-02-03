@@ -116,7 +116,7 @@
         android:layout_marginRight="20dp"
         android:background="@color/purple_200"
         android:text="Login"
-        android:textSize="25dp" />
+        android:textSize="15sp" />
 
     <Button
         android:id="@+id/btnNot"
@@ -127,7 +127,7 @@
         android:layout_marginRight="20dp"
         android:background="@color/white"
         android:text="New user ?"
-        android:textSize="15dp" />
+        android:textSize="15sp" />
 
     <Button
         android:id="@+id/btnRegister"
