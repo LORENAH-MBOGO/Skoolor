@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@android:color/black"
     tools:context=".TeacherLogin"
     android:orientation="vertical">
 
@@ -14,10 +15,17 @@
         android:layout_marginTop="15dp"
         android:text="Teachers Login"
         android:textAlignment="center"
-        android:textColor="@color/purple_200"
+        android:textColor="@android:color/holo_blue_light"
         android:textSize="30dp"
         android:textStyle="bold"
         android:gravity="center_horizontal" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="300dp"
+        android:background="@drawable/skoolor">
+    </ImageView>
+
 
     <EditText
         android:id="@+id/etUsername"
@@ -27,7 +35,9 @@
         android:layout_marginTop="15dp"
         android:layout_marginRight="20dp"
         android:ems="10"
+        android:background="@color/cardview_dark_background"
         android:hint="Enter Username"
+        android:textColorHint="@color/white"
         android:inputType="textPersonName"
         android:gravity="center_horizontal" />
 
@@ -53,6 +63,8 @@
         android:layout_marginRight="20dp"
         android:ems="10"
         android:hint="Enter Password"
+        android:textColorHint="@color/white"
+        android:background="@color/cardview_dark_background"
         android:inputType="textPassword"
         android:gravity="center_horizontal" />
 
