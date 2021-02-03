@@ -29,6 +29,10 @@ public class StudentLogin extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        DbStudents = FirebaseDatabase
+                .getInstance()
+                .getReference("students");
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_student_login);
 
@@ -44,8 +48,7 @@ public class StudentLogin extends AppCompatActivity {
         etUsername=findViewById(R.id.etUsername);
         etPassword=findViewById(R.id.etPassword);
         etEmail=findViewById(R.id.etEmail);
-        database=FirebaseDatabase.getInstance();
-        DbStudents= database.getReference("students");
+
         sp=getSharedPreferences("f1",MODE_PRIVATE);
         sp4=getSharedPreferences("f4",MODE_PRIVATE);
 
