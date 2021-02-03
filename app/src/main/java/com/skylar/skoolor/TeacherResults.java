@@ -1,5 +1,7 @@
 package com.skylar.skoolor;
 
+import androidx.appcompat.app.AppCompatActivity;
+
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
@@ -11,11 +13,9 @@ import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.Toast;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import java.util.ArrayList;
 
-public class TeacherAnnnouncements extends AppCompatActivity {
+public class TeacherResults extends AppCompatActivity {
     SharedPreferences sp1, sp2, sp3;
     EditText etNote;
     Button btnSubmit, btnBack;
@@ -24,7 +24,7 @@ public class TeacherAnnnouncements extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_teacher_announcements);
+        setContentView(R.layout.activity_teacher_results);
         btnBack = findViewById(R.id.btnBack);
         spSubject = findViewById(R.id.spSubject);
         etNote = findViewById(R.id.etNote);
@@ -53,15 +53,15 @@ public class TeacherAnnnouncements extends AppCompatActivity {
                 SharedPreferences.Editor editor1 = sp2.edit();
                 editor1.putString("con", String.valueOf(con));
                 editor1.apply();
-                Intent intent = new Intent(TeacherAnnnouncements.this, TeacherBoard.class);
+                Intent intent = new Intent(TeacherResults.this, TeacherBoard.class);
                 startActivity(intent);
-                Toast.makeText(TeacherAnnnouncements.this, "Announcement Posted", Toast.LENGTH_SHORT).show();
+                Toast.makeText(TeacherResults.this, "Results Posted", Toast.LENGTH_SHORT).show();
             }
         });
         btnBack.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(TeacherAnnnouncements.this, TeacherBoard.class);
+                Intent i = new Intent(TeacherResults.this, TeacherBoard.class);
                 startActivity(i);
                 finish();
             }

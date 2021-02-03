@@ -11,6 +11,7 @@
         android:textAlignment="center"
         android:textColor="@color/purple_200"
         android:textSize="30dp"
+        android:fontFamily="cursive"
         android:textStyle="bold"
         android:layout_marginBottom="15dp"
         android:gravity="center_horizontal"

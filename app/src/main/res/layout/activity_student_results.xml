@@ -4,78 +4,46 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/black"
+    android:background="@drawable/resu"
     tools:context=".StudentResults"
     android:orientation="vertical">
 
     <TextView
-        android:id="@+id/tvTitle"
+        android:id="@+id/tvSub"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textAlignment="center"
-        android:textSize="40dp"
-        android:textStyle="bold"
-        android:textColor="@android:color/holo_blue_light"
+        android:layout_marginTop="15dp"
         android:layout_marginBottom="25dp"
-        android:layout_marginTop="25dp"
+        android:textAlignment="center"
+        android:fontFamily="cursive"
         android:gravity="center_horizontal"
-        android:text="My Scores" />
-
-    <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@drawable/resu">
-
-    </ImageView>
-
-    <Button
-        android:id="@+id/button"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="25dp"
-        android:onClick="ReadTextFile"
-        android:layout_marginBottom="15dp"
-        android:background="@color/purple_200"
-        android:layout_marginLeft="25dp"
-        android:layout_marginRight="25dp"
-        android:text="Get the Result"
-        tools:ignore="OnClick" />
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Result is"
-        android:textAlignment="center"
-        android:textSize="20dp"
         android:textColor="@android:color/holo_blue_light"
-        android:layout_marginBottom="10dp"
-        android:layout_marginTop="15dp"
         android:textStyle="bold"
-        android:gravity="center_horizontal" />
+        android:textSize="30dp"
+        android:text="" />
+
     <TextView
-        android:id="@+id/textView"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/button"
-        android:textSize="30sp"
-        android:textStyle="bold"
+        android:id="@+id/tvCon"
+        android:layout_width="392dp"
+        android:layout_height="505dp"
+        android:gravity="top|left"
+        android:maxLines="50"
+        android:minLines="25"
+        android:fontFamily="cursive"
+        android:text=""
         android:textAlignment="center"
-        android:textColor="@color/white"
-        android:layout_marginBottom="10dp"
-        android:layout_marginTop="15dp"
-        android:gravity="center_horizontal"/>
+        android:textColor="@android:color/holo_blue_light"
+        android:textSize="20dp"
+        tools:ignore="RtlCompat" />
 
     <Button
         android:id="@+id/btnBack"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="25dp"
-        android:onClick="ReadTextFile"
-        android:layout_marginBottom="15dp"
         android:background="@color/purple_200"
         android:layout_marginLeft="25dp"
         android:layout_marginRight="25dp"
         android:text="Back"
-        tools:ignore="OnClick" />
+        />
+
 </LinearLayout>

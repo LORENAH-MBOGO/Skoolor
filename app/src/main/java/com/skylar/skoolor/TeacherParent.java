@@ -36,12 +36,13 @@ public class TeacherParent extends AppCompatActivity {
                 Editable s1 = etDate.getText();
                 Editable s2 = etTime.getText();
                 Editable s3 = etVenue.getText();
-                String s = "Meeting will be taken on " + s1 + ", " + s2 + " in classroom " + s3;
+                String s = "Meeting will be held on " + s1 + ", " + s2 + " in school's " + s3;
                 SharedPreferences.Editor editor = sp7.edit();
                 editor.putString("n1", s);
-                editor.commit();
-                Toast.makeText(TeacherParent.this, "Submitted", Toast.LENGTH_SHORT).show();
-
+                editor.apply();
+                Toast.makeText(TeacherParent.this, "Notification submitted", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(TeacherParent.this, TeacherBoard.class);
+                startActivity(intent);
             }
         });
 

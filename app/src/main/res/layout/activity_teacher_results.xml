@@ -15,7 +15,7 @@
         android:layout_marginTop="15dp"
         android:textStyle="bold"
         android:gravity="center_horizontal"
-        android:text="Announcement!" />
+        android:text="RESULTS!" />
 
     <Spinner
         android:id="@+id/spSubject"
@@ -33,7 +33,6 @@
         android:lines="25"
         android:minLines="15"
         android:gravity="top|left"
-        android:fontFamily="cursive"
         android:maxLines="50"
         android:layout_height="wrap_content"
         android:layout_width="match_parent"
@@ -47,7 +46,7 @@
         android:id="@+id/btnSubmit"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Submit"
+        android:text="Post"
         android:layout_marginBottom="5dp"
         android:background="@color/purple_200"
         android:layout_marginLeft="25dp"

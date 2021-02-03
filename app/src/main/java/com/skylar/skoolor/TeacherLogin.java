@@ -102,6 +102,7 @@ public class TeacherLogin extends AppCompatActivity {
                     editor.apply();
                     Intent i= new Intent(TeacherLogin.this,TeacherBoard.class);
                     startActivity(i);
+                    Toast.makeText(TeacherLogin.this, "Registration Successful", Toast.LENGTH_SHORT).show();
                     finish();
                 }
 
@@ -147,6 +148,8 @@ public class TeacherLogin extends AppCompatActivity {
                         editor.commit();
                         Intent i= new Intent(TeacherLogin.this,TeacherBoard.class);
                         startActivity(i);
+                        Toast.makeText(TeacherLogin.this, "Redirecting...", Toast.LENGTH_SHORT).show();
+
                         finish();
                         break;
                     }

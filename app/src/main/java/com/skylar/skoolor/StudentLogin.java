@@ -105,6 +105,8 @@ public class StudentLogin extends AppCompatActivity {
 
                     Intent i= new Intent(StudentLogin.this,StudentBoard.class);
                     startActivity(i);
+                    Toast.makeText(StudentLogin.this, "Registration Successful", Toast.LENGTH_SHORT).show();
+
                     finish();
                 }
 
@@ -160,6 +162,7 @@ public class StudentLogin extends AppCompatActivity {
                             editor.commit();
                             Intent i = new Intent(StudentLogin.this, StudentBoard.class);
                             startActivity(i);
+                            Toast.makeText(StudentLogin.this, "Redirecting...", Toast.LENGTH_SHORT).show();
                             finish();
                             break;
                         }

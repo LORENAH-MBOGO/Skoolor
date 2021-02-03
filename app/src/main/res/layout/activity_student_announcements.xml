@@ -15,6 +15,7 @@
         android:layout_marginBottom="25dp"
         android:textAlignment="center"
         android:gravity="center_horizontal"
+        android:fontFamily="cursive"
         android:textColor="@android:color/holo_blue_light"
         android:textStyle="bold"
         android:textSize="30dp"
@@ -23,14 +24,15 @@
     <TextView
         android:id="@+id/tvCon"
         android:layout_width="match_parent"
-        android:minLines="25"
+        android:layout_height="530dp"
         android:gravity="top|left"
-        android:textColor="@color/white"
         android:maxLines="50"
-        android:layout_height="wrap_content"
-        android:textAlignment="center"
-        android:textSize="20dp"
+        android:fontFamily="cursive"
+        android:minLines="25"
         android:text=""
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="20dp"
         tools:ignore="RtlCompat" />
 
     <Button

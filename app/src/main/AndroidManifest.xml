@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.skylar.skoolor">
+
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
@@ -12,17 +13,17 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Skoolor">
-        <activity android:name=".ParentResults"/>
-        <activity android:name=".StudentResults"/>
+        <activity android:name=".TeacherResults"></activity>
+        <activity android:name=".ParentResults" />
+        <activity android:name=".StudentResults" />
         <activity android:name=".StudentAssignments" />
         <activity android:name=".TeacherAnnnouncements" />
         <activity android:name=".StudentAnnouncements" />
         <activity android:name=".TeacherBoard" />
         <activity android:name=".StudentBoard" />
         <activity android:name=".ParentBoard" />
-        <activity android:name=".ParentMeetings"/>
+        <activity android:name=".ParentMeetings" />
         <activity android:name=".TeacherParent" />
-
         <activity android:name=".Splash" />
         <activity android:name=".ParentLogin" />
         <activity android:name=".TeacherLogin" />
