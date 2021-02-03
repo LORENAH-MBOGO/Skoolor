@@ -1,4 +1,4 @@
-package com.example.a91773.myapplication2;
+package com.skylar.skoolor;
 
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -54,7 +54,7 @@ public class TeacherBoard extends AppCompatActivity {
         btnParent.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i= new Intent(com.example.a91773.myapplication2.TeacherBoard.this, TeacherParent.class);
+                Intent i= new Intent(TeacherBoard.this, TeacherParent.class);
                 startActivity(i);
                 finish();
 
