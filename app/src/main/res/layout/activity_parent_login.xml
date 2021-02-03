@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     android:background="@android:color/black"
     tools:context=".ParentLogin"
+    android:textColor="@android:color/white"
     android:orientation="vertical">
 
     <TextView
@@ -20,14 +21,15 @@
         android:textStyle="bold"
         android:gravity="center_horizontal" />
 
+
     <ImageView
         android:layout_width="wrap_content"
-        android:layout_height="300dp"
+        android:layout_height="189dp"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
         android:background="@drawable/care">
-    </ImageView>
 
+    </ImageView>
 
     <EditText
         android:id="@+id/etUsername"
@@ -52,6 +54,8 @@
         android:layout_marginRight="20dp"
         android:visibility="gone"
         android:ems="10"
+        android:background="@color/cardview_dark_background"
+        android:textColorHint="@color/white"
         android:hint="Enter Email Address"
         android:inputType="textEmailAddress"
         android:gravity="center_horizontal" />
@@ -78,6 +82,8 @@
         android:layout_marginTop="15dp"
         android:layout_marginRight="20dp"
         android:ems="10"
+        android:background="@color/cardview_dark_background"
+        android:textColorHint="@color/white"
         android:hint="Enter Phone Number"
         android:inputType="phone"
         android:gravity="center_horizontal"
@@ -91,6 +97,8 @@
         android:gravity="center_horizontal"
         android:hint="Enter Username of Student"
         android:visibility="gone"
+        android:background="@color/cardview_dark_background"
+        android:textColorHint="@color/white"
         android:layout_marginLeft="20dp"
         android:layout_marginTop="15dp"
         android:layout_marginRight="20dp"
@@ -104,6 +112,8 @@
         android:gravity="center_horizontal"
         android:hint="Enter Roll number of Student"
         android:visibility="gone"
+        android:background="@color/cardview_dark_background"
+        android:textColorHint="@color/white"
         android:layout_marginLeft="20dp"
         android:layout_marginTop="15dp"
         android:layout_marginRight="20dp"
@@ -140,7 +150,7 @@
         android:layout_marginRight="20dp"
         android:background="@color/purple_200"
         android:text="Register"
-        android:textSize="25dp"
+        android:textSize="25sp"
         android:layout_marginBottom="20dp"
         android:visibility="gone" />
 
