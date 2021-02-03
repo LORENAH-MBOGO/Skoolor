@@ -1,8 +1,7 @@
-package com.example.a91773.myapplication2;
+package com.skylar.skoolor;
 
 import android.content.Intent;
 import android.content.SharedPreferences;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.Editable;
 import android.view.View;
@@ -10,7 +9,9 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-public class TeacherActivity4 extends AppCompatActivity {
+import androidx.appcompat.app.AppCompatActivity;
+
+public class TeacherParent extends AppCompatActivity {
 
     EditText etDate, etTime, etVenue;
     Button btnSubmit, btnBack;
@@ -19,7 +20,7 @@ public class TeacherActivity4 extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_teacher4);
+        setContentView(R.layout.activity_teacher_parent);
 
         etDate = findViewById(R.id.etDate);
         etTime = findViewById(R.id.etTime);
@@ -39,7 +40,7 @@ public class TeacherActivity4 extends AppCompatActivity {
                 SharedPreferences.Editor editor = sp7.edit();
                 editor.putString("n1", s);
                 editor.commit();
-                Toast.makeText(TeacherActivity4.this, "Submitted", Toast.LENGTH_SHORT).show();
+                Toast.makeText(TeacherParent.this, "Submitted", Toast.LENGTH_SHORT).show();
 
             }
         });
@@ -47,7 +48,7 @@ public class TeacherActivity4 extends AppCompatActivity {
         btnBack.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(TeacherActivity4.this, TeacherActivity2.class);
+                Intent i = new Intent(TeacherParent.this, TeacherBoard.class);
                 startActivity(i);
                 finish();
 

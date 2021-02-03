@@ -1,8 +1,7 @@
-package com.example.a91773.myapplication2;
+package com.skylar.skoolor;
 
 import android.content.Intent;
 import android.content.SharedPreferences;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.Editable;
 import android.view.View;
@@ -12,9 +11,11 @@ import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.Toast;
 
+import androidx.appcompat.app.AppCompatActivity;
+
 import java.util.ArrayList;
 
-public class TeacherActivity3 extends AppCompatActivity {
+public class TeacherAnnnouncements extends AppCompatActivity {
     SharedPreferences sp1,sp2,sp3;
 EditText etNote;
 Button btnSubmit,btnBack;
@@ -22,7 +23,7 @@ Button btnSubmit,btnBack;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_teacher3);
+        setContentView(R.layout.activity_teacher_announcements);
         btnBack=findViewById(R.id.btnBack);
         spSubject=findViewById(R.id.spSubject);
         etNote=findViewById(R.id.etNote);
@@ -51,13 +52,13 @@ Button btnSubmit,btnBack;
                 SharedPreferences.Editor editor1=sp2.edit();
                 editor1.putString("con", String.valueOf(con));
                 editor1.commit();
-                Toast.makeText(TeacherActivity3.this, "Assignment Submitted", Toast.LENGTH_SHORT).show();
+                Toast.makeText(TeacherAnnnouncements.this, "Assignment Submitted", Toast.LENGTH_SHORT).show();
             }
         });
         btnBack.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                   Intent i=new Intent(TeacherActivity3.this,TeacherActivity2.class);
+                   Intent i=new Intent(TeacherAnnnouncements.this, TeacherBoard.class);
                    startActivity(i);
                    finish();
                 }

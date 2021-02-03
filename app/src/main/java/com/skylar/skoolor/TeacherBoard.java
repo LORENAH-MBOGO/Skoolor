@@ -3,14 +3,19 @@ package com.example.a91773.myapplication2;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.pm.ActivityInfo;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
-import android.widget.Toast;
 
-public class TeacherActivity2 extends AppCompatActivity {
+import androidx.appcompat.app.AppCompatActivity;
+
+import com.skylar.skoolor.MainActivity;
+import com.skylar.skoolor.R;
+import com.skylar.skoolor.TeacherAnnnouncements;
+import com.skylar.skoolor.TeacherParent;
+
+public class TeacherBoard extends AppCompatActivity {
     SharedPreferences sp;
     TextView tvName;
     Button btnAnnouncement,btnParent,btnLogout;
@@ -18,7 +23,7 @@ public class TeacherActivity2 extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_teacher2);
+        setContentView(R.layout.activity_teacher_board);
         int o= ActivityInfo.SCREEN_ORIENTATION_PORTRAIT;
         setRequestedOrientation(o);
         sp=getSharedPreferences("f1",MODE_PRIVATE);
@@ -31,7 +36,7 @@ public class TeacherActivity2 extends AppCompatActivity {
         btnAnnouncement.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i= new Intent(TeacherActivity2.this,TeacherActivity3.class);
+                Intent i= new Intent(TeacherBoard.this, TeacherAnnnouncements.class);
                 startActivity(i);
                 finish();
 
@@ -40,7 +45,7 @@ public class TeacherActivity2 extends AppCompatActivity {
         btnLogout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i= new Intent(TeacherActivity2.this,MainActivity.class);
+                Intent i= new Intent(TeacherBoard.this, MainActivity.class);
                 startActivity(i);
                 finish();
 
@@ -49,7 +54,7 @@ public class TeacherActivity2 extends AppCompatActivity {
         btnParent.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i= new Intent(TeacherActivity2.this,TeacherActivity4.class);
+                Intent i= new Intent(com.example.a91773.myapplication2.TeacherBoard.this, TeacherParent.class);
                 startActivity(i);
                 finish();
 

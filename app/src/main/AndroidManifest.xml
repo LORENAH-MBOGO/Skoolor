@@ -18,8 +18,7 @@
         <activity android:name=".TeacherLogin" />
         <activity android:name=".StudentLogin" />
         <activity
-            android:name=".MainActivity"
-            android:theme="@style/SplashTheme">
+            android:name=".MainActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
