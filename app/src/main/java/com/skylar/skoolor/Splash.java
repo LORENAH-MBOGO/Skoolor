@@ -12,7 +12,7 @@ public class Splash extends AppCompatActivity {
 
     @Override
     public void onCreate(Bundle icicle) {
-        setTheme(R.style.Theme_AppCompat_DayNight);
+        setTheme(R.style.Theme_Skoolor);
 
         super.onCreate(icicle);
         setContentView(R.layout.activity_splash);

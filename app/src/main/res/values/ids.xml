@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <item name="btnBack" type="id">Back</item>
+    <item name="btnBack" type="id" />
     <item name="btnRegister" type="id" />
     <item name="btnNot" type="id" />
-    <item name="btnLogin" type="id">Login</item>
+    <item name="btnLogin" type="id" />
     <item name="etRoll" type="id" />
     <item name="etPhone" type="id" />
     <item name="etPassword" type="id" />
