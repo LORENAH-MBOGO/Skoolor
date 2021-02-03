@@ -99,7 +99,7 @@ public class TeacherLogin extends AppCompatActivity {
                     DbTeachers.child(un).setValue(s);
                     SharedPreferences.Editor editor=sp.edit();
                     editor.putString("name",un);
-                    editor.commit();
+                    editor.apply();
                     Intent i= new Intent(TeacherLogin.this,TeacherBoard.class);
                     startActivity(i);
                     finish();

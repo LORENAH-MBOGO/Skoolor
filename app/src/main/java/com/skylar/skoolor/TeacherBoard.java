@@ -10,11 +10,6 @@ import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.skylar.skoolor.MainActivity;
-import com.skylar.skoolor.R;
-import com.skylar.skoolor.TeacherAnnnouncements;
-import com.skylar.skoolor.TeacherParent;
-
 public class TeacherBoard extends AppCompatActivity {
     SharedPreferences sp;
     TextView tvName;
