@@ -13,9 +13,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="15dp"
-        android:text="Parents Login"
+        android:text="PARENT LOGIN"
         android:textAlignment="center"
-        android:textColor="@android:color/holo_blue_light"
+        android:textColor="@android:color/white"
         android:textSize="30dp"
         android:textStyle="bold"
         android:gravity="center_horizontal" />
@@ -23,7 +23,9 @@
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="300dp"
-        android:background="@drawable/skoolor">
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/care">
     </ImageView>
 
 
