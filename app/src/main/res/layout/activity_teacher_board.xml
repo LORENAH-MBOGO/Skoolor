@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
     android:layout_height="match_parent">
 
     <TextView
@@ -15,37 +16,54 @@
         android:gravity="center_horizontal"
         android:text="" />
 
-    <Button
-        android:id="@+id/btnAnnouncement"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@color/purple_200"
-        android:layout_marginBottom="25dp"
+    <ImageView
+        android:layout_width="185dp"
+        android:layout_height="115dp"
         android:layout_marginLeft="25dp"
         android:layout_marginRight="25dp"
-        android:text="Announcement" />
+        android:background="@drawable/announcements">
+
+    </ImageView>
+
+    <Button
+        android:id="@+id/btnAnnouncement"
+        android:layout_width="188dp"
+        android:layout_height="36dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginBottom="25dp"
+        android:background="@color/purple_200"
+        android:text="Announcements" />
+
+    <ImageView
+        android:layout_width="186dp"
+        android:layout_height="115dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:background="@drawable/meet">
+
+    </ImageView>
 
     <Button
         android:id="@+id/btnParent"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="25dp"
-        android:background="@color/purple_200"
+        android:layout_width="188dp"
+        android:layout_height="36dp"
         android:layout_marginLeft="25dp"
         android:layout_marginRight="25dp"
+        android:layout_marginBottom="25dp"
+        android:background="@color/purple_200"
         android:text="Parents Meeting" />
 
 
     <Button
         android:id="@+id/btnLogout"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="LogOut"
-        android:layout_marginBottom="25dp"
-        android:background="@color/purple_200"
+        android:layout_width="188dp"
+        android:layout_height="35dp"
         android:layout_marginLeft="25dp"
         android:layout_marginRight="25dp"
-        />
+        android:layout_marginBottom="25dp"
+        android:background="@color/purple_200"
+        android:text="LogOut" />
 
 
 </LinearLayout>
