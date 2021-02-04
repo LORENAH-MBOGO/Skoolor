@@ -15,29 +15,26 @@
         android:layout_marginBottom="25dp"
         android:textAlignment="center"
         android:gravity="center_horizontal"
-        android:fontFamily="cursive"
-        android:textColor="@android:color/holo_blue_light"
+        android:textColor="@color/purple_200"
         android:textStyle="bold"
         android:textSize="30dp"
         android:text="" />
 
     <TextView
         android:id="@+id/tvCon"
-        android:layout_width="392dp"
-        android:layout_height="467dp"
-        android:fontFamily="cursive"
+        android:layout_width="match_parent"
+        android:layout_height="503dp"
         android:gravity="top|left"
         android:maxLines="50"
         android:minLines="25"
         android:text=""
         android:textAlignment="center"
-        android:textColor="@color/white"
+        android:textColor="@color/purple_200"
         android:textSize="20dp"
         tools:ignore="RtlCompat" />
 
     <Button
         android:id="@+id/btnBack"
-        android:layout_marginTop="20dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/purple_200"

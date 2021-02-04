@@ -10,24 +10,24 @@ import android.widget.Button;
 import android.widget.TextView;
 
 public class StudentResults extends AppCompatActivity {
-    SharedPreferences sp1,sp2,sp3;
+    SharedPreferences r1,r2,r3;
     Button btnBack;
-    TextView tvCon,tvSub;
+    TextView rCon,rSub;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_student_results);
-        tvCon=findViewById(R.id.tvCon);
-        tvSub=findViewById(R.id.tvSub);
+        rCon=findViewById(R.id.rCon);
+        rSub=findViewById(R.id.rSub);
         btnBack=findViewById(R.id.btnBack);
-        tvCon.setText("");
-        tvSub.setText("");
-        sp1=getSharedPreferences("f1",MODE_PRIVATE);
-        sp2=getSharedPreferences("f2",MODE_PRIVATE);
-        String sub=sp1.getString("sub","");
-        String con=sp2.getString("con","");
-        tvSub.setText(sub);
-        tvCon.setText(con);
+        rCon.setText("");
+        rSub.setText("");
+        r1=getSharedPreferences("f1",MODE_PRIVATE);
+        r2=getSharedPreferences("f2",MODE_PRIVATE);
+        String sub=r1.getString("sub","");
+        String con=r2.getString("con","");
+        rCon.setText(sub);
+        rSub.setText(con);
         btnBack.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

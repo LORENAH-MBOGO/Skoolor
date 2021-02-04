@@ -10,27 +10,28 @@ import android.widget.Button;
 import android.widget.TextView;
 
 public class StudentAnnouncements extends AppCompatActivity {
-        SharedPreferences sp1,sp2,sp3;
-        Button btnBack;
-        TextView tvCon,tvSub;
-        @Override
-        protected void onCreate(Bundle savedInstanceState) {
-            super.onCreate(savedInstanceState);
+    SharedPreferences a1,a2,a3;
+    Button btnBack;
+    TextView tvCon,tvSub;
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
             setContentView(R.layout.activity_student_announcements);
-            tvCon=findViewById(R.id.tvCon);
-            tvSub=findViewById(R.id.tvSub);
-            btnBack=findViewById(R.id.btnBack);
-            tvCon.setText("");
-            tvSub.setText("");
-            sp1=getSharedPreferences("f1",MODE_PRIVATE);
-            sp2=getSharedPreferences("f2",MODE_PRIVATE);
-            String sub=sp1.getString("sub","");
-            String con=sp2.getString("con","");
-            tvSub.setText(sub);
-            tvCon.setText(con);
-            btnBack.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
+        tvSub=findViewById(R.id.tvSub);
+        tvCon=findViewById(R.id.tvCon);
+
+        btnBack=findViewById(R.id.btnBack);
+        tvCon.setText("");
+        tvSub.setText("");
+        a1=getSharedPreferences("f1",MODE_PRIVATE);
+        a2=getSharedPreferences("f2",MODE_PRIVATE);
+        String sub=a1.getString("sub","");
+        String con=a2.getString("con","");
+        tvSub.setText(sub);
+        tvCon.setText(con);
+        btnBack.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
                     Intent i =new Intent(StudentAnnouncements.this,StudentBoard.class);
                     startActivity(i);
                     finish();

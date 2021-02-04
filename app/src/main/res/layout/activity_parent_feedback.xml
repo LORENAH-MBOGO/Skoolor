@@ -4,40 +4,38 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/black"
-    tools:context=".StudentResults"
-    android:orientation="vertical">
-
+    tools:context=".ParentFeedback" android:orientation="vertical">
     <TextView
-        android:id="@+id/rSub"
+        android:id="@+id/inqName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="15dp"
         android:layout_marginBottom="25dp"
         android:textAlignment="center"
-        android:fontFamily="cursive"
         android:gravity="center_horizontal"
+        android:fontFamily="cursive"
         android:textColor="@android:color/holo_blue_light"
         android:textStyle="bold"
-        android:textSize="30sp"
+        android:textSize="30dp"
         android:text="" />
 
     <TextView
-        android:id="@+id/rCon"
+        android:id="@+id/inqSelect"
         android:layout_width="392dp"
-        android:layout_height="505dp"
+        android:layout_height="467dp"
+        android:fontFamily="cursive"
         android:gravity="top|left"
         android:maxLines="50"
         android:minLines="25"
-        android:fontFamily="cursive"
         android:text=""
         android:textAlignment="center"
-        android:textColor="@android:color/white"
-        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:textSize="20dp"
         tools:ignore="RtlCompat" />
 
     <Button
         android:id="@+id/btnBack"
+        android:layout_marginTop="20dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/purple_200"

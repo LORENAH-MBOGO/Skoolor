@@ -13,7 +13,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Skoolor">
-        <activity android:name=".TeacherResults"></activity>
+        <activity android:name=".ParentFeedback"></activity>
+        <activity android:name=".ParentInquiries" />
+        <activity android:name=".TeacherResults" />
         <activity android:name=".ParentResults" />
         <activity android:name=".StudentResults" />
         <activity android:name=".StudentAssignments" />

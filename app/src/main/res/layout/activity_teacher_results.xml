@@ -5,11 +5,11 @@
     android:background="@color/black">
 
     <TextView
-        android:id="@+id/tvName"
+        android:id="@+id/rName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textAlignment="center"
-        android:textSize="40dp"
+        android:textSize="40sp"
         android:fontFamily="cursive"
         android:textColor="@color/purple_200"
         android:layout_marginBottom="36dp"
@@ -19,18 +19,18 @@
         android:text="RESULTS!" />
 
     <TextView
-        android:id="@+id/tvSelect"
+        android:id="@+id/rSelect"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textAlignment="center"
-        android:textSize="20dp"
+        android:textSize="20sp"
         android:textColor="@color/purple_200"
         android:layout_marginBottom="10dp"
         android:gravity="center_horizontal"
         android:text="Select the Class" />
 
     <Spinner
-        android:id="@+id/spSubject"
+        android:id="@+id/rSubject"
         android:background="@color/white"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -42,7 +42,7 @@
         android:layout_marginLeft="56dp"/>
 
     <EditText
-        android:id="@+id/etNote"
+        android:id="@+id/rNote"
         android:layout_width="match_parent"
         android:layout_height="315dp"
         android:layout_marginBottom="20dp"

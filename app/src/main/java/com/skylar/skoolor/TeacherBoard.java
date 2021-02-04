@@ -13,7 +13,7 @@ import androidx.appcompat.app.AppCompatActivity;
 public class TeacherBoard extends AppCompatActivity {
     SharedPreferences sp;
     TextView tvName;
-    Button btnAnnouncement,btnParent,btnLogout, btnResults;
+    Button btnAnnouncement,btnParent,btnLogout, btnResults, btnInq;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,8 +27,20 @@ public class TeacherBoard extends AppCompatActivity {
         btnAnnouncement=findViewById(R.id.btnAnnouncement);
         btnResults=findViewById(R.id.btnResults);
         btnLogout=findViewById(R.id.btnLogout);
+        btnInq=findViewById(R.id.btnInq);
+
         btnParent=findViewById(R.id.btnParent);
         tvName.setText("Welcome "+name);
+
+        btnInq.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i= new Intent(TeacherBoard.this, ParentFeedback.class);
+                startActivity(i);
+                finish();
+
+            }
+        });
         btnAnnouncement.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

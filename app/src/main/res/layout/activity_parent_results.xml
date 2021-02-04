@@ -8,7 +8,7 @@
     android:layout_height="match_parent">
 
     <TextView
-        android:id="@+id/tvSub"
+        android:id="@+id/rSub"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="15dp"
@@ -18,22 +18,21 @@
         android:gravity="center_horizontal"
         android:textColor="@android:color/holo_blue_light"
         android:textStyle="bold"
-        android:textSize="30dp"
+        android:textSize="30sp"
         android:text="" />
 
     <TextView
-        android:id="@+id/tvCon"
+        android:id="@+id/rCon"
         android:layout_width="392dp"
         android:layout_height="505dp"
         android:gravity="top|left"
-        android:background="@color/cardview_dark_background"
         android:maxLines="50"
         android:minLines="25"
         android:fontFamily="cursive"
         android:text=""
         android:textAlignment="center"
-        android:textColor="@android:color/holo_blue_light"
-        android:textSize="20dp"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
         tools:ignore="RtlCompat" />
 
     <Button

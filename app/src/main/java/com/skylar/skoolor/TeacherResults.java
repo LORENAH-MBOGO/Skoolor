@@ -16,21 +16,21 @@ import android.widget.Toast;
 import java.util.ArrayList;
 
 public class TeacherResults extends AppCompatActivity {
-    SharedPreferences sp1, sp2, sp3;
-    EditText etNote;
+    SharedPreferences r1, r2, r3;
+    EditText rNote;
     Button btnSubmit, btnBack;
-    Spinner spSubject;
+    Spinner rSubject;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_teacher_results);
         btnBack = findViewById(R.id.btnBack);
-        spSubject = findViewById(R.id.spSubject);
-        etNote = findViewById(R.id.etNote);
+        rSubject = findViewById(R.id.rSubject);
+        rNote = findViewById(R.id.rNote);
         btnSubmit = findViewById(R.id.btnSubmit);
-        sp1 = getSharedPreferences("f1", MODE_PRIVATE);
-        sp2 = getSharedPreferences("f2", MODE_PRIVATE);
+        r1 = getSharedPreferences("f1", MODE_PRIVATE);
+        r2 = getSharedPreferences("f2", MODE_PRIVATE);
         final ArrayList<String> s = new ArrayList<>();
         s.add("DBMS");
         s.add("OS");
@@ -39,18 +39,18 @@ public class TeacherResults extends AppCompatActivity {
         s.add("AOA");
         s.add("CN");
         ArrayAdapter arrayAdapter = new ArrayAdapter(this, android.R.layout.simple_spinner_dropdown_item, s);
-        spSubject.setAdapter(arrayAdapter);
+        rSubject.setAdapter(arrayAdapter);
 
         btnSubmit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                final int id1 = spSubject.getSelectedItemPosition();
+                final int id1 = rSubject.getSelectedItemPosition();
                 final String sub = s.get(id1);
-                final Editable con = etNote.getText();
-                SharedPreferences.Editor editor = sp1.edit();
+                final Editable con = rNote.getText();
+                SharedPreferences.Editor editor = r1.edit();
                 editor.putString("sub", sub);
                 editor.apply();
-                SharedPreferences.Editor editor1 = sp2.edit();
+                SharedPreferences.Editor editor1 = r2.edit();
                 editor1.putString("con", String.valueOf(con));
                 editor1.apply();
                 Intent intent = new Intent(TeacherResults.this, TeacherBoard.class);

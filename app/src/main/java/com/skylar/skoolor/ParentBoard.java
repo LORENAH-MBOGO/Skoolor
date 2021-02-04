@@ -13,7 +13,7 @@ import androidx.appcompat.app.AppCompatActivity;
 public class ParentBoard extends AppCompatActivity {
 
     TextView tvName;
-    Button btnResult,btnMeeting,btnLogout;
+    Button btnResult,btnMeeting,btnLogout,btnInq;
     SharedPreferences sp5;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,6 +22,7 @@ public class ParentBoard extends AppCompatActivity {
 
         tvName=findViewById(R.id.tvName);
         btnLogout=findViewById(R.id.btnLogout);
+        btnInq=findViewById(R.id.btnInq);
         btnMeeting=findViewById(R.id.btnMeeting);
         btnResult=findViewById(R.id.btnResult);
         int o= ActivityInfo.SCREEN_ORIENTATION_PORTRAIT;
@@ -56,6 +57,16 @@ public class ParentBoard extends AppCompatActivity {
                 finish();
             }
         });
+
+        btnInq.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i=new Intent(ParentBoard.this,ParentInquiries.class);
+                startActivity(i);
+                finish();
+            }
+        });
+
 
     }
 }
