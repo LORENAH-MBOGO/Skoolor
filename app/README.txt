@@ -1,4 +1,4 @@
-# Skoolor 
+# Skoolor
 #### Feb 1st 2021
 
 #### By **Lorenah M.**
@@ -35,7 +35,7 @@ Java
 ```bash
 Get login details from admin
 Student login and access notifications as well as submit ssignment
-Parents login and make inquiries as well as see notifications 
+Parents login and make inquiries as well as see notifications
 Faculty login to post notifications and see parent inquiries
 
 
