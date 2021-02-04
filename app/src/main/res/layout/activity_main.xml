@@ -24,7 +24,7 @@
         android:layout_marginLeft="100dp"
         android:layout_marginTop="30dp"
         android:layout_marginRight="100dp"
-        app:srcCompat="@drawable/student" />
+        app:srcCompat="@drawable/student1" />
 
     <TextView
         android:id="@+id/tvStudent"
@@ -43,7 +43,7 @@
         android:layout_height="150dp"
         android:layout_marginLeft="100dp"
         android:layout_marginRight="100dp"
-        app:srcCompat="@drawable/teacher" />
+        app:srcCompat="@drawable/teaches" />
 
     <TextView
         android:id="@+id/tvTeacher"
@@ -62,7 +62,7 @@
         android:layout_height="172dp"
         android:layout_marginLeft="100dp"
         android:layout_marginRight="100dp"
-        app:srcCompat="@drawable/parents" />
+        app:srcCompat="@drawable/parr" />
 
     <TextView
         android:id="@+id/tvParent"

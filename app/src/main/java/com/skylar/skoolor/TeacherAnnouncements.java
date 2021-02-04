@@ -32,12 +32,12 @@ public class TeacherAnnouncements extends AppCompatActivity {
         a1=getSharedPreferences("f1",MODE_PRIVATE);
         a2=getSharedPreferences("f2",MODE_PRIVATE);
         final ArrayList<String> s=new ArrayList<>();
-        s.add("DBMS");
-        s.add("OS");
-        s.add("Maths");
-        s.add("COA");
-        s.add("AOA");
-        s.add("CN");
+        s.add("MATHS");
+        s.add("ENG");
+        s.add("SWA");
+        s.add("SCIENCE");
+        s.add("SOCIAL");
+        s.add("COMPUTER");
         ArrayAdapter arrayAdapter=new ArrayAdapter(this, android.R.layout.simple_spinner_dropdown_item,s);
         spSubject.setAdapter(arrayAdapter);
 
