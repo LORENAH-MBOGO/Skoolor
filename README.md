@@ -7,7 +7,7 @@
 
 ```bash
 
-Skoolor is an android based application developed on java platform. This Student Faculty Parent app is for everyday use for students, faculty and parents.
+Skoolor is an android based application developed on java platform. This Student Faculty Parent app allows tracking of student's progress and eases communication between the aforementioned parties.
 ```
 ## Technologies Used
 
