@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/submitass"
 
-    tools:context=".StudentAssignments"
+    tools:context=".ui.StudentAssignments"
     android:orientation="vertical">
 
     <TextView

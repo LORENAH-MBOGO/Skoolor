@@ -1,4 +1,4 @@
-package com.skylar.skoolor;
+package com.skylar.skoolor.models;
 
 public class Students {
     private    String StPassword;

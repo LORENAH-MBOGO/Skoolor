@@ -1,4 +1,4 @@
-package com.skylar.skoolor;
+package com.skylar.skoolor.ui;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -13,6 +13,8 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.Spinner;
+
+import com.skylar.skoolor.R;
 
 import java.io.IOException;
 import java.util.ArrayList;

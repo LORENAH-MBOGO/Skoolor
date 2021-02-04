@@ -1,4 +1,4 @@
-package com.skylar.skoolor;
+package com.skylar.skoolor.ui;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -12,6 +12,8 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.Toast;
+
+import com.skylar.skoolor.R;
 
 import java.util.ArrayList;
 

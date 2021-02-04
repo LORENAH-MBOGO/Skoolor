@@ -1,4 +1,4 @@
-package com.skylar.skoolor;
+package com.skylar.skoolor.ui;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -7,13 +7,11 @@ import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.text.Editable;
 import android.view.View;
-import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.Spinner;
 import android.widget.Toast;
 
-import java.util.ArrayList;
+import com.skylar.skoolor.R;
 
 public class ParentInquiries extends AppCompatActivity {
     EditText mSub, mChild, mFeed;

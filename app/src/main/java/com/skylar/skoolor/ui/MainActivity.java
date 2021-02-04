@@ -1,4 +1,4 @@
-package com.skylar.skoolor;
+package com.skylar.skoolor.ui;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -7,6 +7,8 @@ import android.content.pm.ActivityInfo;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
+
+import com.skylar.skoolor.R;
 
 public class MainActivity extends AppCompatActivity {
     ImageButton iStudent, iParent, iTeacher;

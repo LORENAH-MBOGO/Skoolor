@@ -1,4 +1,4 @@
-package com.skylar.skoolor;
+package com.skylar.skoolor.ui;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -18,39 +18,35 @@ import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
+import com.skylar.skoolor.R;
+import com.skylar.skoolor.models.Students;
+import com.skylar.skoolor.models.Teachers;
 
-public class StudentLogin extends AppCompatActivity {
-
-    Button btnLogin, btnNot, btnRegister,btnBack ;
-    EditText etPhone , etUsername, etPassword , etEmail,etRoll;
+public class TeacherLogin extends AppCompatActivity {
+    Button btnLogin, btnNot, btnRegister ,btnBack;
+    EditText etPhone , etUsername, etPassword , etEmail;
     FirebaseDatabase database;
-    DatabaseReference DbStudents;
-    SharedPreferences sp,sp4;
+    DatabaseReference DbTeachers;
+    SharedPreferences sp;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        DbStudents = FirebaseDatabase
-                .getInstance()
-                .getReference("students");
-
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_student_login);
-
+        setContentView(R.layout.activity_teacher_log_in);
         int o= ActivityInfo.SCREEN_ORIENTATION_PORTRAIT;
         setRequestedOrientation(o);
 
-        etRoll=findViewById(R.id.etRoll);
-        btnBack=findViewById(R.id.btnBack);
         btnLogin=findViewById(R.id.btnLogin);
         btnNot=findViewById(R.id.btnNot);
+        btnBack=findViewById(R.id.btnBack);
         etPhone=findViewById(R.id.etPhone);
         btnRegister=findViewById(R.id.btnRegister);
         etUsername=findViewById(R.id.etUsername);
         etPassword=findViewById(R.id.etPassword);
         etEmail=findViewById(R.id.etEmail);
-
+        database= FirebaseDatabase.getInstance();
+        DbTeachers= database.getReference("teachers");
         sp=getSharedPreferences("f1",MODE_PRIVATE);
-        sp4=getSharedPreferences("f4",MODE_PRIVATE);
 
         btnNot.setOnClickListener(new View.OnClickListener() {
             @SuppressLint("WrongConstant")
@@ -61,7 +57,15 @@ public class StudentLogin extends AppCompatActivity {
                 btnRegister.setVisibility(0);
                 btnNot.setVisibility(-1);
                 etEmail.setVisibility(0);
-                etRoll.setVisibility(0);
+            }
+        });
+
+        btnBack.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i=new Intent(TeacherLogin.this,MainActivity.class);
+                startActivity(i);
+                finish();
             }
         });
 
@@ -72,7 +76,6 @@ public class StudentLogin extends AppCompatActivity {
                 String pw = etPassword.getText().toString();
                 String un = etUsername.getText().toString();
                 String pn = etPhone.getText().toString();
-                String rn = etRoll.getText().toString();
                 if (un.length()<2){
                     etUsername.setError("Please enter correct username");
                     etUsername.setText("");
@@ -94,19 +97,14 @@ public class StudentLogin extends AppCompatActivity {
                     etPhone.requestFocus();
                 }
                 else{
-                    Students s = new Students( un, pw, em, pn,rn);
-                    DbStudents.child(un).setValue(s);
+                    Teachers s = new Teachers( un, pw, em, pn);
+                    DbTeachers.child(un).setValue(s);
                     SharedPreferences.Editor editor=sp.edit();
                     editor.putString("name",un);
-                    editor.commit();
-                    SharedPreferences.Editor editor1=sp4.edit();
-                    editor1.putString("name",rn);
-                    editor1.commit();
-
-                    Intent i= new Intent(StudentLogin.this,StudentBoard.class);
+                    editor.apply();
+                    Intent i= new Intent(TeacherLogin.this,TeacherBoard.class);
                     startActivity(i);
-                    Toast.makeText(StudentLogin.this, "Registration Successful", Toast.LENGTH_SHORT).show();
-
+                    Toast.makeText(TeacherLogin.this, "Registration Successful", Toast.LENGTH_SHORT).show();
                     finish();
                 }
 
@@ -123,6 +121,8 @@ public class StudentLogin extends AppCompatActivity {
         });
 
 
+
+
         btnLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -132,45 +132,34 @@ public class StudentLogin extends AppCompatActivity {
             }
         });
 
-
-        btnBack.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent i= new Intent(StudentLogin.this,MainActivity.class);
-                startActivity(i);
-                finish();
-
-            }
-        });
-
     }
     private void signIn(final String username, final String password){
 
 
-        DbStudents.addValueEventListener(new ValueEventListener() {
+        DbTeachers.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                 //s.clear();
                 int a=0;
                 for(DataSnapshot d:dataSnapshot.getChildren()){
                     Students data=d.getValue(Students.class);
-                    if (data.getStUsername().equals(username))
-                        if (data.getStPassword().equals(password)) {
-                            a = 1;
-                            SharedPreferences.Editor editor = sp.edit();
-                            editor.putString("name", username);
-                            editor.commit();
-                            Intent i = new Intent(StudentLogin.this, StudentBoard.class);
-                            startActivity(i);
-                            Toast.makeText(StudentLogin.this, "Redirecting...", Toast.LENGTH_SHORT).show();
-                            finish();
-                            break;
-                        }
+                    if(data.getStPassword().equals(password) && data.getStUsername().equals(username)){
+                        a=1;
+                        SharedPreferences.Editor editor=sp.edit();
+                        editor.putString("name",username);
+                        editor.commit();
+                        Intent i= new Intent(TeacherLogin.this,TeacherBoard.class);
+                        startActivity(i);
+                        Toast.makeText(TeacherLogin.this, "Redirecting...", Toast.LENGTH_SHORT).show();
+
+                        finish();
+                        break;
+                    }
                     //  s.add(data);
 
                 }
                 if(a==0){
-                    Toast.makeText(StudentLogin.this, "Please enter correct username and password", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(TeacherLogin.this, "Please enter correct username and password", Toast.LENGTH_SHORT).show();
                 }
 
             }
@@ -187,8 +176,5 @@ public class StudentLogin extends AppCompatActivity {
 
 
 
-
-
-
-
 }
+

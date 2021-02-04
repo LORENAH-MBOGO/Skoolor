@@ -1,10 +1,12 @@
-package com.skylar.skoolor;
+package com.skylar.skoolor.ui;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
+
+import com.skylar.skoolor.R;
 
 public class Splash extends AppCompatActivity {
     /** Duration of wait **/

@@ -1,4 +1,4 @@
-package com.skylar.skoolor;
+package com.skylar.skoolor.ui;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -18,6 +18,9 @@ import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
+import com.skylar.skoolor.R;
+import com.skylar.skoolor.models.Parents;
+import com.skylar.skoolor.models.Students;
 
 public class ParentLogin extends AppCompatActivity {
     Button btnLogin, btnNot, btnRegister, btnBack;
