@@ -4,6 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_centerVertical="true"
+    android:layout_marginLeft="119dp"
+    android:layout_marginRight="50dp"
     android:orientation="vertical">
 
 
@@ -11,14 +14,14 @@
         android:id="@+id/tvName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="25dp"
+        android:fontFamily="cursive"
+        android:gravity="center_horizontal"
         android:text=""
         android:textAlignment="center"
-        android:textSize="40dp"
-        android:fontFamily="cursive"
         android:textColor="@color/purple_200"
-        android:layout_marginBottom="25dp"
-        android:layout_marginTop="15dp"
-        android:gravity="center_horizontal" />
+        android:textSize="40dp" />
 
     <ImageView
         android:layout_width="178dp"
@@ -31,8 +34,6 @@
         android:id="@+id/btnAssignment"
         android:layout_width="wrap_content"
         android:layout_height="36dp"
-        android:layout_marginLeft="25dp"
-        android:layout_marginRight="25dp"
         android:layout_marginBottom="15dp"
         android:background="@color/purple_200"
         android:text="Submit Assignment" />
@@ -48,8 +49,6 @@
         android:id="@+id/btnResult"
         android:layout_width="190dp"
         android:layout_height="36dp"
-        android:layout_marginLeft="25dp"
-        android:layout_marginRight="25dp"
         android:layout_marginBottom="15dp"
         android:background="@color/purple_200"
         android:text="View Result" />
@@ -65,8 +64,6 @@
         android:id="@+id/btnAnnouncement"
         android:layout_width="188dp"
         android:layout_height="36dp"
-        android:layout_marginLeft="25dp"
-        android:layout_marginRight="25dp"
         android:layout_marginBottom="15dp"
         android:background="@color/purple_200"
         android:text="Announcements" />
@@ -75,8 +72,6 @@
         android:id="@+id/btnLogout"
         android:layout_width="188dp"
         android:layout_height="34.5dp"
-        android:layout_marginLeft="25dp"
-        android:layout_marginRight="5dp"
         android:background="@color/purple_200"
         android:text="LogOut" />
 
