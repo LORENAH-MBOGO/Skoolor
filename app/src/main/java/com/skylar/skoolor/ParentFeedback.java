@@ -4,30 +4,29 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.content.pm.ActivityInfo;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
 public class ParentFeedback extends AppCompatActivity {
-    SharedPreferences sp1,sp2,sp3;
+
+    TextView pContext;
+    SharedPreferences s7;
     Button btnBack;
-    TextView inqName,inqSelect;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_parent_feedback);
-        inqName=findViewById(R.id.inqName);
-        inqSelect=findViewById(R.id.inqSelect);
+        pContext=findViewById(R.id.pContext);
         btnBack=findViewById(R.id.btnBack);
-        inqSelect.setText("");
-        inqName.setText("");
-        sp1=getSharedPreferences("f1",MODE_PRIVATE);
-        sp2=getSharedPreferences("f2",MODE_PRIVATE);
-        String sub=sp1.getString("sub","");
-        String con=sp2.getString("con","");
-        inqSelect.setText(sub);
-        inqName.setText(con);
+        int o= ActivityInfo.SCREEN_ORIENTATION_PORTRAIT;
+        setRequestedOrientation(o);
+        s7=getSharedPreferences("f4",MODE_PRIVATE);
+        String name=s7.getString("n1","");
+        pContext.setText(name);
         btnBack.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -36,5 +35,6 @@ public class ParentFeedback extends AppCompatActivity {
                 finish();
             }
         });
+
     }
 }

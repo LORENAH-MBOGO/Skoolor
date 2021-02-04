@@ -6,42 +6,43 @@
     android:layout_height="match_parent"
     tools:context=".ParentFeedback" android:orientation="vertical">
     <TextView
-        android:id="@+id/inqName"
+        android:id="@+id/pSubject"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="15dp"
         android:layout_marginBottom="25dp"
         android:textAlignment="center"
-        android:gravity="center_horizontal"
         android:fontFamily="cursive"
-        android:textColor="@android:color/holo_blue_light"
+        android:gravity="center_horizontal"
+        android:textColor="@color/purple_200"
         android:textStyle="bold"
-        android:textSize="30dp"
-        android:text="" />
+        android:textSize="30sp"
+        android:text="Parents Feedback!" />
 
     <TextView
-        android:id="@+id/inqSelect"
-        android:layout_width="392dp"
-        android:layout_height="467dp"
-        android:fontFamily="cursive"
+        android:id="@+id/pContext"
+        android:layout_width="match_parent"
+        android:minLines="10"
         android:gravity="top|left"
-        android:maxLines="50"
-        android:minLines="25"
-        android:text=""
+        android:textColor="@color/purple_200"
+        android:maxLines="10"
+        android:fontFamily="cursive"
+        android:layout_height="wrap_content"
         android:textAlignment="center"
-        android:textColor="@color/white"
-        android:textSize="20dp"
+        android:textSize="30sp"
+        android:text=""
         tools:ignore="RtlCompat" />
 
     <Button
         android:id="@+id/btnBack"
-        android:layout_marginTop="20dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
         android:background="@color/purple_200"
         android:layout_marginLeft="25dp"
         android:layout_marginRight="25dp"
         android:text="Back"
         />
+
 
 </LinearLayout>

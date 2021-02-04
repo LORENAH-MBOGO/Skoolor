@@ -12,23 +12,23 @@ import android.widget.TextView;
 public class StudentAnnouncements extends AppCompatActivity {
     SharedPreferences a1,a2,a3;
     Button btnBack;
-    TextView tvCon,tvSub;
+    TextView studSub,studCon;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
             setContentView(R.layout.activity_student_announcements);
-        tvSub=findViewById(R.id.tvSub);
-        tvCon=findViewById(R.id.tvCon);
+        studSub=findViewById(R.id.studSub);
+        studCon=findViewById(R.id.studCon);
 
         btnBack=findViewById(R.id.btnBack);
-        tvCon.setText("");
-        tvSub.setText("");
+        studCon.setText("");
+        studSub.setText("");
         a1=getSharedPreferences("f1",MODE_PRIVATE);
         a2=getSharedPreferences("f2",MODE_PRIVATE);
         String sub=a1.getString("sub","");
         String con=a2.getString("con","");
-        tvSub.setText(sub);
-        tvCon.setText(con);
+        studSub.setText(sub);
+        studCon.setText(con);
         btnBack.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

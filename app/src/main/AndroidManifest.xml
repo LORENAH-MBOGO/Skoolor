@@ -19,7 +19,7 @@
         <activity android:name=".ParentResults" />
         <activity android:name=".StudentResults" />
         <activity android:name=".StudentAssignments" />
-        <activity android:name=".TeacherAnnnouncements" />
+        <activity android:name=".TeacherAnnouncements" />
         <activity android:name=".StudentAnnouncements" />
         <activity android:name=".TeacherBoard" />
         <activity android:name=".StudentBoard" />

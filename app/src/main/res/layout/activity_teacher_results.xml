@@ -2,8 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/black">
-
+>
     <TextView
         android:id="@+id/rName"
         android:layout_width="match_parent"
@@ -46,7 +45,7 @@
         android:layout_width="match_parent"
         android:layout_height="315dp"
         android:layout_marginBottom="20dp"
-        android:backgroundTint="@color/white"
+        android:backgroundTint="@color/cardview_dark_background"
         android:ems="10"
         android:gravity="top|left"
         android:inputType="textMultiLine"
@@ -55,8 +54,8 @@
         android:minLines="15"
         android:scrollbars="vertical"
         android:text=""
-        android:textColor="@color/white"
-        android:textSize="25sp" />
+        android:textColor="@color/black"
+        android:textSize="20sp" />
 
     <Button
         android:id="@+id/btnSubmit"

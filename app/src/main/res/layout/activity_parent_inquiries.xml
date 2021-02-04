@@ -1,76 +1,120 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:background="@color/black"
+    android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ParentInquiries"
-    android:orientation="vertical">
+    android:background="@color/black">
+
     <TextView
-        android:id="@+id/inqName"
+        android:id="@+id/pSub"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textAlignment="center"
         android:textSize="40sp"
-        android:fontFamily="cursive"
         android:textColor="@color/purple_200"
-        android:layout_marginBottom="36dp"
+        android:layout_marginBottom="40dp"
         android:layout_marginTop="15dp"
         android:textStyle="bold"
+        android:fontFamily="cursive"
         android:gravity="center_horizontal"
         android:text="My Feedback!" />
 
-
-    <Spinner
-        android:id="@+id/inqSubject"
+    <TextView
+        android:id="@+id/fSub"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="56dp"
+        android:textSize="20sp"
+        android:textColor="@color/purple_200"
+        android:layout_marginBottom="10dp"
         android:layout_marginTop="15dp"
-        android:layout_marginRight="56dp"
-        android:layout_marginBottom="36dp"
-        android:background="@color/white"
         android:gravity="center_horizontal"
-        android:scrollbarSize="50dp" />
+        android:text="Enter Subject" />
 
     <EditText
-        android:id="@+id/inqNote"
+        android:id="@+id/mSub"
         android:layout_width="match_parent"
-        android:layout_height="315dp"
-        android:layout_marginBottom="20dp"
+        android:textSize="20sp"
         android:backgroundTint="@color/white"
-        android:ems="10"
-        android:gravity="top|left"
         android:textColor="@color/white"
-        android:inputType="textMultiLine"
-        android:lines="25"
-        android:maxLines="50"
-        android:minLines="15"
-        android:scrollbars="vertical"
-        android:text=""
-        android:textSize="25sp" />
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="15dp"
+        android:gravity="center_horizontal"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text" />
+
+    <TextView
+        android:id="@+id/mName"
+        android:layout_width="match_parent"
+        android:textSize="20sp"
+        android:backgroundTint="@color/white"
+        android:textColor="@color/purple_200"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="15dp"
+        android:gravity="center_horizontal"
+        android:layout_height="wrap_content"
+        android:text="Enter Name of Student" />
+
+    <EditText
+        android:id="@+id/mChild"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:backgroundTint="@color/white"
+        android:textColor="@color/white"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:gravity="center_horizontal"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/feed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textColor="@color/purple_200"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="15dp"
+        android:gravity="center_horizontal"
+        android:text="Report Issue" />
+
+    <EditText
+        android:id="@+id/mFeed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:textSize="20sp"
+        android:backgroundTint="@color/white"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:textColor="@color/white"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="15dp"
+        android:gravity="center_horizontal"
+        android:inputType="text"
+        android:text="" />
 
     <Button
         android:id="@+id/btnSubmit"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Submit"
-        android:layout_marginBottom="5dp"
+        android:layout_marginBottom="25dp"
         android:background="@color/purple_200"
         android:layout_marginLeft="25dp"
         android:layout_marginRight="25dp"
-
-        />
+        android:text="Submit" />
 
     <Button
         android:id="@+id/btnBack"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="25dp"
         android:background="@color/purple_200"
         android:layout_marginLeft="25dp"
         android:layout_marginRight="25dp"
-        android:text="Back"
-        />
-
+        android:text="Back" />
 </LinearLayout>

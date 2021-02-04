@@ -15,7 +15,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import java.util.ArrayList;
 
-public class TeacherAnnnouncements extends AppCompatActivity {
+public class TeacherAnnouncements extends AppCompatActivity {
 
     SharedPreferences a1,a2,a3;
     EditText aNote;
@@ -53,15 +53,15 @@ public class TeacherAnnnouncements extends AppCompatActivity {
                 SharedPreferences.Editor editor1=a2.edit();
                 editor1.putString("con", String.valueOf(con));
                 editor1.apply();
-                Intent intent = new Intent(TeacherAnnnouncements.this, TeacherBoard.class);
+                Intent intent = new Intent(TeacherAnnouncements.this, TeacherBoard.class);
                 startActivity(intent);
-                Toast.makeText(TeacherAnnnouncements.this, "Announcement Posted", Toast.LENGTH_SHORT).show();
+                Toast.makeText(TeacherAnnouncements.this, "Announcement Posted", Toast.LENGTH_SHORT).show();
             }
         });
         btnBack.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(TeacherAnnnouncements.this, TeacherBoard.class);
+                Intent i = new Intent(TeacherAnnouncements.this, TeacherBoard.class);
                 startActivity(i);
                 finish();
             }

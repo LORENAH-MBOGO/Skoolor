@@ -44,7 +44,7 @@ public class TeacherBoard extends AppCompatActivity {
         btnAnnouncement.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i= new Intent(TeacherBoard.this, TeacherAnnnouncements.class);
+                Intent i= new Intent(TeacherBoard.this, TeacherAnnouncements.class);
                 startActivity(i);
                 finish();
 

@@ -1,12 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
-    android:background="@color/black"
-    android:textColor="@color/white"
     android:layout_height="match_parent">
 
     <TextView
-        android:id="@+id/tvName"
+        android:id="@+id/aName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textAlignment="center"
@@ -21,7 +19,7 @@
 
     <Spinner
         android:id="@+id/spSubject"
-        android:background="@color/white"
+        android:background="@color/purple_200"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="15dp"
@@ -37,15 +35,17 @@
         android:layout_height="264dp"
         android:layout_marginBottom="25dp"
         android:ems="10"
+        android:textSize="25dp"
         android:fontFamily="cursive"
         android:gravity="top|left"
+        android:backgroundTint="@color/cardview_dark_background"
         android:inputType="textMultiLine"
         android:lines="25"
         android:maxLines="50"
         android:minLines="15"
         android:scrollbars="vertical"
         android:text=""
-        android:textColor="@color/white" />
+        android:textColor="@color/black" />
 
     <Button
         android:id="@+id/btnSubmit"

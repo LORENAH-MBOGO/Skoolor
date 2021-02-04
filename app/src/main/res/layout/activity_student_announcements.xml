@@ -8,7 +8,7 @@
     tools:context=".StudentAnnouncements"
     android:orientation="vertical">
     <TextView
-        android:id="@+id/tvSub"
+        android:id="@+id/studSub"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="15dp"
@@ -17,11 +17,11 @@
         android:gravity="center_horizontal"
         android:textColor="@color/purple_200"
         android:textStyle="bold"
-        android:textSize="30dp"
+        android:textSize="30sp"
         android:text="" />
 
     <TextView
-        android:id="@+id/tvCon"
+        android:id="@+id/studCon"
         android:layout_width="match_parent"
         android:layout_height="503dp"
         android:gravity="top|left"
@@ -30,7 +30,7 @@
         android:text=""
         android:textAlignment="center"
         android:textColor="@color/purple_200"
-        android:textSize="20dp"
+        android:textSize="20sp"
         tools:ignore="RtlCompat" />
 
     <Button
