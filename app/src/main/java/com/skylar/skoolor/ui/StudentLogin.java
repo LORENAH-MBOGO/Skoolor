@@ -80,7 +80,7 @@ public class StudentLogin extends AppCompatActivity {
                     etUsername.setText("");
                     etUsername.requestFocus();
                 }
-                else if (!em.contains("@ves.ac.in")){
+                else if (!em.contains("@moringa.ac.in")){
                     etEmail.setError("Please use college email Id");
                     etEmail.setText("");
                     etEmail.requestFocus();
